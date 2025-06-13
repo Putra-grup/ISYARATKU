@@ -23,7 +23,7 @@ class C_Data_Akun extends Controller
 
     public function homepage()
     {
-        return view('homepage'); // Pastikan file resources/views/homepage.blade.php ada
+        return view('user/homepage_user');
     }
 
 
