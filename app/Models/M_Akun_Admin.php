@@ -3,12 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+// use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class M_Akun_Admin extends Model
+class M_Akun_Admin extends Authenticatable
+// class M_Akun_Admin extends Model
 {
     use Notifiable;
 

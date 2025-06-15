@@ -40,7 +40,12 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'admin' => [ // << Tambahan
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
     ],
+
 
     /*
     |--------------------------------------------------------------------------
@@ -69,6 +74,11 @@ return [
     'users' => [
         'driver' => 'eloquent',
         'model' => App\Models\M_Data_Akun::class,
+    ],
+
+    'admins' => [ // << Tambahan
+        'driver' => 'eloquent',
+        'model' => App\Models\M_Akun_Admin::class,
     ],
     ],
 

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\C_Data_Akun;
+use App\Http\Controllers\C_Akun_Admin;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -18,3 +19,6 @@ Route::get('/register', [C_Data_Akun::class, 'formRegister'])->name('register');
 Route::post('/register', [C_Data_Akun::class, 'register']);
 
 Route::get('/beranda', [C_Data_Akun::class, 'homepage'])->middleware('auth')->name('homepage');
+
+Route::get('/admin/dashboard', [C_Akun_Admin::class, 'homepage'])->name('admin.dashboard');
+

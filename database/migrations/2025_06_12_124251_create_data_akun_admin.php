@@ -14,11 +14,13 @@ return new class extends Migration
         $table->string('nama_lengkap');
         $table->string('email')->unique();
         $table->string('password');
+        $table->string('phone')->nullable();
+        $table->string('foto')->nullable(); // tambahkan ini
         $table->timestamps();
         });
     }
 
- 
+
     public function down(): void
     {
         Schema::dropIfExists('data_akun_admin');

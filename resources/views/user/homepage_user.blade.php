@@ -35,6 +35,8 @@
         </section>
     </main>
 
-
+      {{-- Footer --}}
+    @component('components.footer') @endcomponent
 
 @endsection
+
